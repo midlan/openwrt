@@ -125,6 +125,14 @@ define Device/engenius_ews2910p-v3
 endef
 TARGET_DEVICES += engenius_ews2910p-v3
 
+define Device/hpe_1620-24g
+  $(Device/hpe_1920)
+  SOC := rtl8382
+  DEVICE_MODEL := 1620-24G (JG913A)
+  H3C_DEVICE_ID := 0x00010032
+endef
+TARGET_DEVICES += hpe_1620-24g
+
 define Device/hpe_1920-8g
   $(Device/hpe_1920)
   SOC := rtl8380
